@@ -1,0 +1,10 @@
+set-aspect-ratio(width, height)
+  &:after
+    padding-top: (100 * height / width)%
+    display: block
+    content: ''
+
+image-cover()
+  background-size cover
+  background-position center
+  background-repeat no-repeat

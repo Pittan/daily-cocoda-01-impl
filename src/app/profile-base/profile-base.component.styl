@@ -1,0 +1,56 @@
+@import '../../defines.styl'
+@import '../../functions.styl'
+
+:host()
+  display block
+  color $color-white
+
+.user-icon
+  width 93px
+  height 93px
+  background-color #aaa
+  border-radius 100px
+  margin 0 auto
+  background-image: url(../../assets/profile.jpg)
+  image-cover()
+
+.user-name
+  font-family $font-futura
+  font-weight $font-futura-weight
+  font-style $font-futura-style
+  font-size 24px
+  text-align center
+  padding 0 10px
+  line-height 1.3
+
+.screen-name
+  font-family $font-futura
+  font-weight $font-futura-weight
+  font-style $font-futura-style
+  font-size 12px
+  text-align center
+  padding 0 10px
+  line-height 1
+  margin-top: 2px
+
+.follow-follower-row
+  display flex
+  align-items center
+  justify-content center
+  margin-top: 11px
+
+  .item
+    text-align center
+
+    &:last-child
+      margin-left: 112px
+
+    .number
+      font-size 22px
+      font-family $font-amiko
+      font-weight $font-amiko-weight
+      line-height 1.3
+
+    .description
+      font-size 12px
+      font-weight bold

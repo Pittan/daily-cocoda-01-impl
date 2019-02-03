@@ -1,0 +1,12 @@
+<ngx-masonry
+        [options]="myOptions"
+        [updateLayout]="square">
+  <ngxMasonryItem
+          class="masonry-item"
+          [class.square]="square"
+          *ngFor="let item of masonryItems; let i = index">
+    <div class="image">
+      <div class="inner-image" [style.background-image]="'url(assets/' + (i+1) + '.jpg)'"></div>
+    </div>
+  </ngxMasonryItem>
+</ngx-masonry>

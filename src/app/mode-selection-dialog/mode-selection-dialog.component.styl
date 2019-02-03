@@ -1,0 +1,63 @@
+@import '../../defines.styl'
+@import '../../functions.styl'
+
+.label
+  font-size 20px
+  font-family $font-futura
+  font-weight $font-futura-weight
+  font-style $font-futura-style
+  margin-bottom 6px
+
+.color-row
+  display flex
+  align-items center
+  overflow-y scroll
+  -webkit-overflow-scrolling touch
+  height 100px
+  padding 5px 10px
+  .color
+    flex none
+    width 60px
+    height 60px
+    border-radius 45px
+    margin-right 10px
+    box-shadow 1.5px 1px 7px 0 rgba(152,157,166, 0.5);
+    &.color-1
+      background-color: $color-primary-1
+    &.color-2
+      background-color: $color-primary-2
+    &.color-3
+      background-color: $color-primary-3
+    &.color-4
+      background-color: $color-primary-4
+    &.color-5
+      background-color: $color-primary-5
+    &.selected
+      border 2px solid $color-white
+
+    &:active
+      opacity .8
+    &:last-child
+      margin 0
+
+
+.style-row
+  display flex
+  align-items center
+  .style
+    display flex
+    align-items center
+    justify-content center
+    font-family $font-futura
+    font-weight $font-futura-weight
+    font-style $font-futura-style
+    set-aspect-ratio(1,1)
+    flex none
+    width calc(50% - 5px)
+    border-radius 5px
+    margin-right 10px
+    box-shadow 1.5px 1px 7px 0 rgba(152,157,166, 0.5);
+    &:active
+      opacity .8
+    &:last-child
+      margin 0
